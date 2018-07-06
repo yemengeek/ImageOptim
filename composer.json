@@ -1,0 +1,39 @@
+{
+    "name": "yemengeek/imageoptim",
+    "description": ":description",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Hisham Ali",
+            "email": "ahishamali10@gmail.com",
+            "homepage": "https://yemengeek.com"
+        }
+    ],
+    "homepage": "https://github.com/yemengeek/imageoptim",
+    "keywords": ["Laravel", "Yemengeek", "ImageOptim"],
+    "require": {
+        "shortpixel/shortpixel-php": "*"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Yemengeek\\ImageOptim\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yemengeek\\ImageOptim\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yemengeek\\ImageOptim\\ImageOptimServiceProvider"
+            ],
+            "aliases": {
+                "ImageOptim": "Yemengeek\\ImageOptim\\Facades\\ImageOptim"
+            }
+        }
+    }
+}
