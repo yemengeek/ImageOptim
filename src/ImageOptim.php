@@ -18,7 +18,7 @@ class ImageOptim {
         ]);
     }
 
-    public static function default($urls = [], $name = null, $paths = null)
+    public function default($urls = [], $name = null, $paths = null)
     {
         try
         {
@@ -32,7 +32,7 @@ class ImageOptim {
         }
     }
 
-    public static function fromFile($filePath, $name = null, $paths = null)
+    public function fromFile($filePath, $name = null, $paths = null)
     {
         try
         {
@@ -46,7 +46,7 @@ class ImageOptim {
         }
     }
 
-    public static function fromFiles($filePath, $name = null, $paths = null)
+    public function fromFiles($filePath, $name = null, $paths = null)
     {
         try
         {
